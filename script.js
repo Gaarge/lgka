@@ -92,7 +92,7 @@ form.addEventListener('submit', async (event) => {
   formStatus.textContent = 'Отправляем заявку...';
 
   try {
-    const response = await fetch('/api/request', {
+    const response = await fetch('/send.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
